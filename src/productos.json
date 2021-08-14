@@ -13,5 +13,10 @@
     "title": "teclado",
     "price": "9000",
     "id": 2
+  },
+  {
+    "title": "asda",
+    "price": "5000",
+    "id": 3
   }
 ]

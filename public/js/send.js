@@ -1,7 +1,8 @@
 
 // Función de JavaScript para cargar el nuevo producto:
+function send  (e)  {
 
-const cargarProducto = e => {
+    
 
     e.preventDefault();
 
@@ -9,15 +10,14 @@ const cargarProducto = e => {
 
     const titulo = document.getElementById('title').value;
     const precio = document.getElementById('price').value;
-    const imgurl = document.getElementById('thumbnail').value;
 
     // Crear objeto con toda la data:
 
     const data = {
 
         title: titulo,
-        price: precio,
-        thumbnail: imgurl
+        price: precio
+
     };
 
     // Opciones del método fetch:
@@ -42,7 +42,6 @@ const cargarProducto = e => {
         .then( () => { 
             document.getElementById('title').value = '';
             document.getElementById('price').value = '';
-            document.getElementById('thumbnail').value = '';
         })
         .catch(error => console.log(error) )
     ;
